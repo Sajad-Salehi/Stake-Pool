@@ -1,0 +1,10 @@
+dotenv: .env
+
+dependencies:
+  
+  - OpenZeppelin/openzeppelin-contracts@4.3.2
+
+compiler:
+  solc:
+    remappings:
+      - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.3.2'
