@@ -1,2 +1,2 @@
 # Stake-Pool
-Stake Pool SmartContract
+Stake Pool Smart Contract
