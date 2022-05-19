@@ -1,2 +1,2 @@
 # Stake-Pool
-Stake Pool Smart Contract
+A sample Stake Pool Smart Contract
