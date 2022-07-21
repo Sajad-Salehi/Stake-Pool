@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NFT INFO PAGE</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<style>    
+    body{
+        height: 100vh;
+        background-color: dimgray;
+        text-align: center;        
+        place-content: center;
+        
+    }
+    div{
+        
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+</style>
+
+
+
+<body>
+    <h1 class="title1">Stake pool</h1>
+    <div class="onboard-container">
+        
+
+        <form action="/deposit" method="post" class="form" enctype="multipart/form-data">
+            <input class="content1" type="text" placeholder="Amount USD" name="content1" requierd><br>
+            <button type="submit" class="onboard">Deposit</button>
+        </form>
+
+
+        <form action="/withdraw" method="post" class="form" enctype="multipart/form-data">    
+            <button type="submit" class="onboard">Withdraw</button>
+        </form>
+        
+
+        <form action="" method="post" class="form" enctype="multipart/form-data">    
+            <h2>your balance: {{ balance }}</h2><br>
+        </form>
+    </div>
+</body>
+</html>
