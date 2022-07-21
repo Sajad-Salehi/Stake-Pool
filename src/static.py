@@ -67,7 +67,7 @@ def approve():
     token_info = connect_web3('token')
     print(token_info)
     max_amount = Web3.toWei(2**64-1,'ether')    
-    spender = '0x51A4ACef234c5b9E682F6d2584E1e41Cb6645C76'
+    spender = ''
 
     tx = token_info['contract'].functions.approve(spender, max_amount).buildTransaction({
         'from': token_info['wallet_address'], 
@@ -85,12 +85,12 @@ def connect_web3(contract_name):
 
     if contract_name == 'defibank':
         file = open('DefiBank.json')
-        contract_address = '0x51A4ACef234c5b9E682F6d2584E1e41Cb6645C76'
+        contract_address = ''
 
 
     elif contract_name == 'token':
         file = open('Token.json')
-        contract_address = '0x0B1B1D5481d05B0C0a1e5008DB55f87E64d03D18'
+        contract_address = ''
 
     data = json.load(file)
     abi = data["abi"]
@@ -105,7 +105,7 @@ def connect_web3(contract_name):
         'contract_address': contract_address,
         'private_key': os.getenv('PRIVATE_KEY'),
         'provider_url': os.getenv('WEB3_PROVIDER'),
-        'wallet_address': '0xB268C07881a418D0BcADCF7204CeBc6D68A54904'
+        'wallet_address': ''
     }
 
     # connecting to the infura http provier and create contract
