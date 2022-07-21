@@ -6,9 +6,9 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 contract DefiBank {
 
 
-    address public constant Admin = 0xB268C07881a418D0BcADCF7204CeBc6D68A54904;
-    address public constant USD = 0x0B1B1D5481d05B0C0a1e5008DB55f87E64d03D18;
-    address public constant soren = 0xC07FEc71bbc111C6fC9C33da2cbEA586469b9097;
+    address public constant Admin = ;
+    address public constant USD = ;
+    address public constant soren = ;
 
     mapping(address => uint256) balances;
     event Deposit(address user, address token, uint256 amount);
