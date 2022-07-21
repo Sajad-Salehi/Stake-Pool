@@ -50,3 +50,6 @@ then you can run your Dapp
 ```bash
 flask run
 ```
+
+#Resources
+See my article in Medium: https://medium.com/@sajadsolidity/how-to-connect-flask-app-to-a-smart-contract-4a843b0a97fd
